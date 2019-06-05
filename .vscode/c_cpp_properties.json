@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "D:/MinGW/bin/gcc.exe",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__GNUC__=7",
+                "__stdcall=attribute((stdcall))",
+                "__cdecl=__attribute__((__cdecl__))",
+                "__cplusplus=201703L"
+            ],
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build & debug file",
+            "type": "shell",
+            "command": "g++ \"${fileBasename}\" -g -o \"${fileBasenameNoExtension}\"; \"./${fileBasenameNoExtension}\"",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & run file",
+            "type": "shell",
+            "command": "g++ \"${fileBasename}\" -o \"${fileBasenameNoExtension}\"; \"./${fileBasenameNoExtension}\"",            
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
